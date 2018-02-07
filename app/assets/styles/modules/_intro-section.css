@@ -1,0 +1,11 @@
+.intro-section {
+  background-color: $bgRed;
+
+  &__text-content {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 200;
+    margin: 0 auto;
+    padding: 2.5rem;
+  }
+}

@@ -1,4 +1,6 @@
 /* Put Things Like Reusable Color Variables Here. Example: 
-$mainBlue {
-color: blue;
-} */
+$mainBlue: blue; */
+
+$bgRed: #B03108;
+
+$bgGreen: #296A0C;
