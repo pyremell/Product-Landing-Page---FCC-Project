@@ -1,0 +1,19 @@
+.content-section {
+  background-color: $bgGreen;
+  display: inline-block;
+  
+  &__text-content {
+    margin: 0 auto;
+    padding: 60px;
+
+    @mixin atMedium {
+      float: left;
+      width: 50%;
+      font-size: 1.2rem;
+    }
+  }
+
+  &--image {
+    visibility: hidden;
+  }
+}
