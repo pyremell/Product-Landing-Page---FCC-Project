@@ -1,0 +1,21 @@
+.content {
+  display: inline-block;
+  
+  &__text-content {
+    margin: 0 auto;
+    padding: 60px;
+    font-size: 1.2rem;
+    line-height: 1.4;
+
+    @mixin atMedium {
+      float: left;
+      width: 40%;
+      margin-left: 50px;
+
+      @mixin atLarge {
+        margin-left: 120px;
+        font-size: 1.8rem;
+      }
+    }
+  }
+}

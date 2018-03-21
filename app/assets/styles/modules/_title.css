@@ -1,5 +1,6 @@
 .title {
-  background-color: $bgRed;
+  background-color: $bgBlue;
+  opacity: 0.85;
   margin: 0;
 
   &__title-text {
@@ -8,5 +9,9 @@
     font-weight: 200;
     margin: 0 auto;
     padding: 2.5rem;
+
+    @mixin atLarge {
+      font-size: 1.8rem;
+    }
   }
 }

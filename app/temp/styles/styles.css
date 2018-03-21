@@ -362,6 +362,8 @@ $mainBlue: blue; */
 body {
   font-family: 'Roboto', sans-serif;
   color: #FEF9E7;
+  background-image: url("../../assets/images/grid.png");
+  background-attachment: fixed;
 }
 img {
   max-width: 100%;
@@ -376,7 +378,8 @@ h1, h2 {
   font-weight: 200;
 }
 .title {
-  background-color: #B03108;
+  background-color: #154360;
+  opacity: 0.85;
   margin: 0;
 }
 .title__title-text {
@@ -386,21 +389,34 @@ h1, h2 {
     margin: 0 auto;
     padding: 2.5rem;
   }
-.content-section {
-  background-color: #296A0C;
-  display: inline-block;
-}
-.content-section__text-content {
-    margin: 0 auto;
-    padding: 60px;
-  }
-@media (min-width: 800px) {
-.content-section__text-content {
-      float: left;
-      width: 50%;
-      font-size: 1.2rem
+@media (min-width: 1200px) {
+.title__title-text {
+      font-size: 1.8rem
   }
     }
-.content-section--image {
-    visibility: hidden;
+.content {
+  display: inline-block;
+}
+.content__text-content {
+    margin: 0 auto;
+    padding: 60px;
+    font-size: 1.2rem;
+    line-height: 1.4;
   }
+@media (min-width: 800px) {
+.content__text-content {
+      float: left;
+      width: 40%;
+      margin-left: 50px
+  }
+
+      @media (min-width: 1200px) {
+.content__text-content {
+        margin-left: 120px;
+        font-size: 1.8rem
+  }
+    }
+    }
+.about-section {
+  background-color: #0B5345;
+}

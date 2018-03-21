@@ -1,6 +1,8 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: #FEF9E7;
+  background-image: url("../../assets/images/grid.png");
+  background-attachment: fixed;
 }
 
 img {
