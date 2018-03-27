@@ -1,0 +1,29 @@
+.generic-content-container {
+  display: inline-block;
+  
+  &__text-content {
+    margin: 0 auto;
+    padding: 60px;
+    font-size: 1.2rem;
+    line-height: 1.4;
+
+    @mixin atMedium {
+      width: 40%;
+    }
+
+    @mixin atLarge {
+      font-size: 1.5rem;
+    }
+  }
+
+  &--images {
+    @mixin atMedium {
+      display: inline-block;
+      width: 40%;
+      margin: 50px auto 0;
+      padding: 60px;
+    }
+  }
+
+  
+}

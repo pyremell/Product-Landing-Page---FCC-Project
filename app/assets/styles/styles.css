@@ -4,5 +4,5 @@
 @import "base/_mixins";
 @import "base/_global";
 @import "modules/_title";
-@import "modules/_content";
+@import "modules/_generic-content-container";
 @import "modules/_about-section";

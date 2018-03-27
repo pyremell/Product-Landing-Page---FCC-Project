@@ -1,6 +1,5 @@
 .title {
   background-color: $bgBlue;
-  opacity: 0.85;
   margin: 0;
 
   &__title-text {
