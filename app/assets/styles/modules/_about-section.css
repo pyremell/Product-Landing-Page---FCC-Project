@@ -4,16 +4,13 @@
 
   &--image {
     float: left;
+    margin-left: 8%;
   }
 
   &__text-content {
     @mixin atMedium {
       float: left;
-      margin-left: 50px;
-    }
-
-    @mixin atLarge {
-      margin-left: 120px;
+      margin-left: 15%;
     }
   }
 }
