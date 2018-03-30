@@ -1,14 +1,16 @@
 .generic-content-container {
+  float: left;
+  padding: 10px;
   
   &__text-content {
-    padding: 40px;
+    padding: 2.5rem;
     font-size: 1.2rem;
     line-height: 1.4;
     text-align: center;
+    margin: 0 auto;
 
     @mixin atMedium {
       width: 40%;
-      padding-right: 0;
       text-align: left;
     }
 
@@ -20,8 +22,8 @@
   &--images {
     @mixin atMedium {
       display: inline-block;
-      width: 20%;
-      padding: 60px 10px;
+      width: 30%;
+      padding-top: 60px;
     }
   }
 

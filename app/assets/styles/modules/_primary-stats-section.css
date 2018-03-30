@@ -1,0 +1,15 @@
+.primary-stats-section {
+  background-color: $bgOrange;
+
+  &__text-content {
+    @mixin atMedium {
+      float: right;
+      padding-right: 15%;
+    }
+  }
+  
+  &--image {
+    float: right;
+    padding-right: 8%;
+  }
+}

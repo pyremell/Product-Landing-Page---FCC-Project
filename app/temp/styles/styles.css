@@ -384,11 +384,9 @@ div {
 }
 .title {
   background-color: #154360;
-  margin: 0;
 }
 .title__title-text {
     text-align: center;
-    font-family: 'Orbitron', sans-serif;
     font-weight: 200;
     margin: 0 auto;
     padding: 2.5rem;
@@ -398,16 +396,22 @@ div {
       font-size: 1.8rem
   }
     }
+.generic-content-container {
+  float: left;
+  padding: 10px;
+
+  
+}
 .generic-content-container__text-content {
-    padding: 40px;
+    padding: 2.5rem;
     font-size: 1.2rem;
     line-height: 1.4;
     text-align: center;
+    margin: 0 auto;
   }
 @media (min-width: 800px) {
 .generic-content-container__text-content {
       width: 40%;
-      padding-right: 0;
       text-align: left
   }
     }
@@ -419,21 +423,33 @@ div {
 @media (min-width: 800px) {
 .generic-content-container--images {
       display: inline-block;
-      width: 20%;
-      padding: 60px 10px
+      width: 30%;
+      padding-top: 60px
   }
     }
 .about-section {
   background-color: #0B5345;
-  display: inline-block;
 }
-.about-section--image {
-    float: left;
-    margin-left: 8%;
-  }
 @media (min-width: 800px) {
 .about-section__text-content {
       float: left;
       margin-left: 15%
   }
     }
+.about-section--image {
+    float: left;
+    margin-left: 2%;
+  }
+.primary-stats-section {
+  background-color: #CA6F1E;
+}
+@media (min-width: 800px) {
+.primary-stats-section__text-content {
+      float: right;
+      padding-right: 15%
+  }
+    }
+.primary-stats-section--image {
+    float: right;
+    padding-right: 8%;
+  }
