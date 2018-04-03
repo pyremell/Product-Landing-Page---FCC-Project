@@ -4,12 +4,13 @@
   &__text-content {
     @mixin atMedium {
       float: right;
-      padding-right: 15%;
+      margin-right: 15%;
+      text-align: right;
     }
   }
   
   &--image {
     float: right;
-    padding-right: 8%;
+    margin-right: 2%;
   }
 }

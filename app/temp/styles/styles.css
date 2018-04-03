@@ -424,7 +424,8 @@ div {
 .generic-content-container--images {
       display: inline-block;
       width: 30%;
-      padding-top: 60px
+      padding-top: 60px;
+      padding-bottom: 40px
   }
     }
 .about-section {
@@ -446,10 +447,11 @@ div {
 @media (min-width: 800px) {
 .primary-stats-section__text-content {
       float: right;
-      padding-right: 15%
+      margin-right: 15%;
+      text-align: right
   }
     }
 .primary-stats-section--image {
     float: right;
-    padding-right: 8%;
+    margin-right: 2%;
   }
