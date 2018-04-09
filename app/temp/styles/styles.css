@@ -399,7 +399,6 @@ div {
 .generic-content-container {
   float: left;
   padding: 10px;
-
   
 }
 .generic-content-container__text-content {
@@ -420,6 +419,9 @@ div {
       font-size: 1.5rem
   }
     }
+.generic-content-container__text-content li {
+    line-height: 1.6rem;
+  }
 @media (min-width: 800px) {
 .generic-content-container--images {
       display: inline-block;
@@ -428,6 +430,9 @@ div {
       padding-bottom: 40px
   }
     }
+.generic-content-container ul {
+    list-style-type: none;
+  }
 .about-section {
   background-color: #0B5345;
 }
@@ -450,6 +455,10 @@ div {
       margin-right: 15%;
       text-align: right
   }
+    }
+.primary-stats-section__text-content h4 {
+      padding-top: 15px;
+      margin: 0;
     }
 .primary-stats-section--image {
     float: right;
