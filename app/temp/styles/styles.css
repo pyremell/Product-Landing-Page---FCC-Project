@@ -465,3 +465,23 @@ div {
     float: right;
     margin-right: 2%;
   }
+.secondary-stats-section {
+  background-color: #461A51;
+}
+@media (min-width: 800px) {
+.secondary-stats-section__text-content {
+      float: left;
+      margin-left: 15%
+  }
+    }
+.secondary-stats-section__text-content h4 {
+      padding-top: 15px;
+      margin: 0;
+    }
+.secondary-stats-section__text-content h4, .secondary-stats-section__text-content ul {
+      padding-left: 0;
+    }
+.secondary-stats-section--image {
+    float: left;
+    margin-left: 2%;
+  }

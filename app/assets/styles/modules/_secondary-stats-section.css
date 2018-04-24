@@ -1,0 +1,24 @@
+.secondary-stats-section {
+  background-color: $bgPurple;
+
+  &__text-content {
+    @mixin atMedium {
+      float: left;
+      margin-left: 15%;
+    }
+
+    h4 {
+      padding-top: 15px;
+      margin: 0;
+    }
+
+    h4, ul {
+      padding-left: 0;
+    }
+  }
+
+  &--image {
+    float: left;
+    margin-left: 2%;
+  }
+}
