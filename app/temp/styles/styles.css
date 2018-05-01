@@ -485,3 +485,7 @@ div {
     float: left;
     margin-left: 2%;
   }
+.site-footer {
+  background-color: #154360;
+  text-align: center;
+}
