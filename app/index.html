@@ -5,18 +5,31 @@
   <title>Jacob Schaefer, Front End Wizard</title>
   <meta name="keywords" content="Web Developer, Front End Developer, HTML, CSS, JavaScript, jQuery">
   <meta name="description" content="Jacob Schaefer, Neophyte Web Developer Extraordinaire!">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="temp/styles/styles.css">
 </head>
 <body>
   <!-- Header -->
-  <header class="header">
-    <ul>
-      <li><a href="#" alt="">Work</a></li>
-      <li><a href="#" alt="">About</a></li>
-      <li><a href="#" alt="">Contact</a></li>
-    </ul>
+  <header class="site-header color-on-scroll">
+    <div class="wrapper">
+
+      <div class="site-header__menu-icon">
+        <div class="site-header__menu-icon__middle"></div>
+      </div>
+      
+        <!-- Used Bootstrap for button styling and positioning -->
+      <nav class="primary-nav primary-nav--pull-right">
+        <ul>
+          <li><a href="#character-bio" alt="">Character Bio</a></li>
+          <li><a href="#primary-skills" alt="">Primary Class Skills</a></li>
+          <li><a href="#secondary-skills" alt="">Secondary Class Skills</a></li>
+          <li><a href="#sample-projects" alt="">Sample Projects</a></li>
+          <a href="#" class="btn">Contact Me</a>
+        </ul>
+      </nav>  
+    </div>
   </header>
   <!-- End Header -->
 
@@ -33,9 +46,9 @@
   <!-- About Me -->
   <div class="about-section generic-content-container">
 
-    <div class="generic-content-container__text-content about-section__text-content">
+    <div class="generic-content-container__text-content about-section__text-content" id="character-bio">
       <h2>Character Bio</h2>
-      <p><strong>Name:</strong> Jacob Schaefer</br><strong>Character Class:</strong> Tech-Rogue</br><strong>Background Story:</strong> Long ago in the magical land of Washington State, Jacob lived and worked as a retail peasant. Knowing his destiny lied elsewhere, he fled the dismal realms of big box commerce and began training in the mysterious arts of front end web development. With no mentor to guide him, Jacob crept through the night seeking arcane tomes of coding knowledge. With their help, he has begun forging myself into a sharpened blade of front end precision. Heed these words, and read on...</p>
+      <p><strong>Name:</strong> Jacob Schaefer</br><strong>Character Class:</strong> Tech-Rogue</br><strong>Background Story:</strong> Long ago in the magical land of Washington State, Jacob lived and worked as a retail peasant. Knowing his destiny lied elsewhere, he fled the dismal realms of big box commerce and began training in the mysterious arts of front end web development. With no mentor to guide him, Jacob crept through the night seeking arcane tomes of coding knowledge. With their help, he has begun forging himself into a sharpened blade of front end precision. Heed these words, and read on...</p>
     </div>
 
     <img class="generic-content-container--images about-section--image" src="./assets/images/avatar-no-grid.png" alt="">
@@ -47,7 +60,7 @@
   <!-- Skills 1 -->
   <div class="generic-content-container primary-stats-section">
 
-    <div class="generic-content-container__text-content primary-stats-section__text-content">
+    <div class="generic-content-container__text-content primary-stats-section__text-content" id="primary-skills">
         <h2>Primary Skills</h2>
         <p>These are the Tech-Rogue's most powerfull skills.</p>
         <ul>
@@ -66,7 +79,7 @@
 
   <!-- Skills 2 -->
   <div class="generic-content-container secondary-stats-section">
-    <div class="generic-content-container__text-content secondary-stats-section__text-content">
+    <div class="generic-content-container__text-content secondary-stats-section__text-content" id="secondary-skills">
       <h2>Secondary Skills</h2>
         <p>These skills are yet to be mastered. However, as the Tech-Rogue gains experience, they will grow in power.</p>
         <ul>
@@ -87,9 +100,12 @@
   
 <!-- End Skills Section -->
 
+<!-- Sample Projects Section - Coming Soon! -->
+
 <!-- Footer -->
   <div class="generic-content-container site-footer">
     <p>Copyright &copy; 2018 Jacob Schaefer. All rights reserved.</p>
   </div>
+
 </body>
 </html>

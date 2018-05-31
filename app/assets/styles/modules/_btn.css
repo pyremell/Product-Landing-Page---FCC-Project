@@ -1,0 +1,9 @@
+.btn {
+  background-color: $bgPurple;
+  margin-top: 10px;
+  float: right;
+}
+
+.btn:hover {
+  background-color:$bgOrange;
+}
