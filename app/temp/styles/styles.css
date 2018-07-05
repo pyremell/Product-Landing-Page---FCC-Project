@@ -1,4 +1,4 @@
-/* Use this file to import CSS files, and pipe them through the compiler */
+/* Use this file to import CSS files from the modules folder, and pipe them through the compiler.  */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -359,287 +359,85 @@ template {
 }
 /* Put Things Like Reusable Color Variables Here. Example: 
 $mainBlue: blue; */
-body {
-  font-family: 'Roboto', sans-serif;
-  color: #FEF9E7;
-  background-image: url("../../assets/images/grid.png");
-  background-attachment: fixed;
-}
-img {
-  max-width: 100%;
-  height: auto;
-  display: none;
-}
+/* Use these mixins when creating break points for responsive design, or for clearfix on elements. */
+/* Place all global styles into this file, i.e. styles that apply across the entire project. Example: font-styles. */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-h1, h2 {
-  font-family: 'Orbitron', sans-serif;
-  font-weight: 200;
-}
-div {
-  opacity: 0.98;
-  width: 100%;
+body {
+  font-family:'Ubuntu', sans-serif;
+  color: #808080;
 }
 .wrapper {
-  overflow: hidden;
-  padding-left: 18px;
-  padding-right: 18px;
-  max-width: 1236px;
-  margin-left: auto;
-  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
-.wrapper--medium {
-      max-width: 976px;
-  }
-.wrapper--narrow {
-      max-width: 470px;
-  }
-.wrapper--no-padding-until-medium {
-    padding-left: 0;
-    padding-right: 0;
-  }
-@media (min-width: 800px) {
-.wrapper--no-padding-until-medium {
-      padding-left: 18px;
-      padding-right: 18px
-  }
-    }
-.wrapper .wrapper {
-      padding-left: 0;
-      padding-right: 0;
-  }
-.wrapper--b-margin {
-
-      margin-bottom: 1rem;
-      
-  }
-@media (min-width: 530px) {
-.wrapper--b-margin {
-          margin-bottom: 3.875rem
-      
-  }
-    }
-.btn {
-  background-color: #461A51;
-  margin-top: 10px;
-  float: right;
+.header-container {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#DCDCDC));
+  background: linear-gradient(#fff, #DCDCDC);
 }
-.btn:hover {
-  background-color:#CA6F1E;
-}
-.title {
-  background-color: #154360;
-}
-.title__title-text {
-    text-align: center;
-    font-weight: 200;
+.header-container__nav-bar {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(105, 105, 105, 0.5)), to(#DCDCDC));
+    background: linear-gradient(rgba(105, 105, 105, 0.5), #DCDCDC);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    position: fixed;
+    width: 100%;
+  }
+.header-container__nav-link {
+    font-size: 1.5em;
     margin: 0 auto;
-    padding: 2.5rem;
-  }
-@media (min-width: 1200px) {
-.title__title-text {
-      font-size: 1.8rem
-  }
-    }
-.generic-content-container {
-  float: left;
-  padding: 10px;
-  
-}
-.generic-content-container__text-content {
-    padding: 2.5rem;
-    font-size: 1.2rem;
-    line-height: 1.4;
-    text-align: center;
-    margin: 0 auto;
-  }
-@media (min-width: 800px) {
-.generic-content-container__text-content {
-      width: 40%;
-      text-align: left
-  }
-    }
-@media (min-width: 1200px) {
-.generic-content-container__text-content {
-      font-size: 1.5rem
-  }
-    }
-.generic-content-container__text-content li {
-    line-height: 1.6rem;
-  }
-@media (min-width: 800px) {
-.generic-content-container--images {
-      display: inline-block;
-      width: 30%;
-      padding-top: 60px;
-      padding-bottom: 40px
-  }
-    }
-.generic-content-container ul {
+    padding: 20px 0;
     list-style-type: none;
   }
-.about-section {
-  background-color: #0B5345;
-}
-@media (min-width: 800px) {
-.about-section__text-content {
-      float: left;
-      margin-left: 15%
-  }
-    }
-.about-section--image {
-    float: left;
-    margin-left: 2%;
-  }
-.primary-stats-section {
-  background-color: #CA6F1E;
-}
-@media (min-width: 800px) {
-.primary-stats-section__text-content {
-      float: right;
-      margin-right: 15%;
-      text-align: right
-
-  }
-    }
-.primary-stats-section__text-content h4 {
-      padding-top: 15px;
-      margin: 0;
-    }
-.primary-stats-section--image {
-    float: right;
-    margin-right: 2%;
-  }
-.secondary-stats-section {
-  background-color: #461A51;
-}
-@media (min-width: 800px) {
-.secondary-stats-section__text-content {
-      float: left;
-      margin-left: 15%
-  }
-    }
-.secondary-stats-section__text-content h4 {
-      padding-top: 15px;
-      margin: 0;
-    }
-.secondary-stats-section__text-content h4, .secondary-stats-section__text-content ul {
-      padding-left: 0;
-    }
-.secondary-stats-section--image {
-    float: left;
-    margin-left: 2%;
-  }
-.site-footer {
-  background-color: #154360;
-  text-align: center;
-}
-.site-header {
-  position: fixed;
-  width: 100%;
-  z-index: 2;
-  background-color: rgba(12, 36, 52, .3);
-}
-&__menu-icon {
-  width: 20px;
-  height: 19px;
-  position: absolute;
-  z-index: 10;
-  top: 10px;
-  right: 10px;
-}
-&__menu-icon::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 3px;
-    background-color: #FFF;
-    -webkit-transform-origin: 0 0;
-            transform-origin: 0 0;
-    -webkit-transition: -webkit-transform .3s ease-out;
-    transition: -webkit-transform .3s ease-out;
-    transition: transform .3s ease-out;
-    transition: transform .3s ease-out, -webkit-transform .3s ease-out;
-  }
-&__menu-icon__middle {
-    position: absolute;
-    top: 8px;
-    left: 0;
-    width: 20px;
-    height: 3px;
-    background-color: #FFF;
-    -webkit-transform-origin: 0 50%;
-            transform-origin: 0 50%;
-    -webkit-transition: all .3s ease-out;
-    transition: all .3s ease-out;
-  }
-&__menu-icon::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 20px;
-    height: 3px;
-    background-color: #FFF;
-    -webkit-transform-origin: 0 100%;
-            transform-origin: 0 100%;
-    -webkit-transition: -webkit-transform .3s ease-out;
-    transition: -webkit-transform .3s ease-out;
-    transition: transform .3s ease-out;
-    transition: transform .3s ease-out, -webkit-transform .3s ease-out;
-  }
-@media (min-width: 800px) {
-&__menu-icon {
-    display: none
-}
-    }
-&__menu-icon--close-x::before {
-    -webkit-transform: rotate(45deg) scaleX(1.25);
-            transform: rotate(45deg) scaleX(1.25);
-  }
-&__menu-icon--close-x .site-header__menu-icon__middle {
-    opacity: 0;
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-  }
-&__menu-icon--close-x::after {
-    -webkit-transform: rotate(-45deg) scaleX(1.25) translateY(1px);
-            transform: rotate(-45deg) scaleX(1.25) translateY(1px);
-  }
-.primary-nav--pull-left{
-    float: left;
-  }
-.primary-nav ul {
-    margin: 0;
-    padding: 0;
-  }
-.primary-nav ul::after {
-        content: "";
-        clear: both;
-        display: table;
-    }
-.primary-nav li {
-    list-style: none;
-    float: left;
-    padding-right: 20px;
-    margin: 20px 0;
-  }
-@media (min-width: 1200px) {
-.primary-nav li {
-      padding-right: 6%
-  }
-    }
-.primary-nav a {
-    color: #fff;
-    font-weight: 300;
+.header-container__nav-link a {
+    padding: 15px;
     text-decoration: none;
+    color: #808080;
   }
-@media (min-width: 1200px) {
-.primary-nav a {
-      font-size: 1.2rem
+.header-container__nav-link a:hover {
+    color: #000000;
   }
-    }
+.header-container__jumbotron {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 80px auto;
+  }
+.header-container__jumbotron-headline {
+    text-align: center;
+    margin-top: 5%;
+    padding: 0 20px;
+    font-size: 2.5em;
+  }
+.header-container__jumbotron-headline p {
+    width: 60%;
+    line-height: 1.7;
+    margin: 0 auto;
+  }
+.header-container__jumbotron-image {
+    width: 40%;
+    height: 40%;
+  }

@@ -1,10 +1,9 @@
 /* Put Things Like Reusable Color Variables Here. Example: 
 $mainBlue: blue; */
 
-$bgOrange: #CA6F1E;
 
-$bgGreen: #0B5345;
+$mainWhite: #DFDFDF;
 
-$bgBlue: #154360;
+$mainGrey: #DCDCDC;
 
-$bgPurple: #461A51;
+$mainDarkGrey: #808080;

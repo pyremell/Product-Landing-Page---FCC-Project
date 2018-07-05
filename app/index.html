@@ -1,111 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Jacob Schaefer, Front End Wizard</title>
-  <meta name="keywords" content="Web Developer, Front End Developer, HTML, CSS, JavaScript, jQuery">
-  <meta name="description" content="Jacob Schaefer, Neophyte Web Developer Extraordinaire!">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+  <!-- build:css assets/styles/styles.css -->
   <link rel="stylesheet" href="temp/styles/styles.css">
+  <!-- endbuild -->
+
+  <!-- build:js assets/scripts/Vendor.js -->
+  <script src="/temp/scripts/Vendor.js"></script>
+  <!-- endbuild -->
+
 </head>
+
 <body>
-  <!-- Header -->
-  <header class="site-header color-on-scroll">
-    <div class="wrapper">
+  <div class="wrapper">
+    <header id="header" class="header-container">
+      <!-- Page Nav Links -->
+      <nav id="nav-bar" class="header-container__nav-bar">
+        <li class="nav-link header-container__nav-link"><a href="">Product Video</a></li>
+        <li class="nav-link header-container__nav-link"><a href="">About Lint</a></li>
+        <li class="nav-link header-container__nav-link"><a href="">Contact Us</a></li>
+      </nav>
 
-      <div class="site-header__menu-icon">
-        <div class="site-header__menu-icon__middle"></div>
+      <!-- Main Headline and Image -->
+      <div class="header-container__jumbotron">
+        <!-- Headline -->
+        <div class="header-container__jumbotron-headline">
+          <h1>Dryer Lint</h1>
+          <p>The Magical, Wonderful, Versatile Product of the future!</p>
       </div>
+  
+
+      <!-- Product Image -->
+      <img src="https://thekrazycouponlady.com/wp-content/uploads/2014/12/dryer-lint2.png" alt="" id="header-img" class="header-container__jumbotron-image">
+    </header>
+  </div>
+        
       
-        <!-- Used Bootstrap for button styling and positioning -->
-      <nav class="primary-nav primary-nav--pull-right">
-        <ul>
-          <li><a href="#character-bio" alt="">Character Bio</a></li>
-          <li><a href="#primary-skills" alt="">Primary Class Skills</a></li>
-          <li><a href="#secondary-skills" alt="">Secondary Class Skills</a></li>
-          <li><a href="#sample-projects" alt="">Sample Projects</a></li>
-          <a href="#" class="btn">Contact Me</a>
-        </ul>
-      </nav>  
-    </div>
-  </header>
-  <!-- End Header -->
-
-  <!-- Title Section -->
-  <div class="title">
-    <div class="title__title-text">
-      <h1>Jacob Schaefer</h1>
-      <h2>Front End Web Developer</h2>
-    </div>
-    
-  </div>
-  <!-- End Title Section -->
-
-  <!-- About Me -->
-  <div class="about-section generic-content-container">
-
-    <div class="generic-content-container__text-content about-section__text-content" id="character-bio">
-      <h2>Character Bio</h2>
-      <p><strong>Name:</strong> Jacob Schaefer</br><strong>Character Class:</strong> Tech-Rogue</br><strong>Background Story:</strong> Long ago in the magical land of Washington State, Jacob lived and worked as a retail peasant. Knowing his destiny lied elsewhere, he fled the dismal realms of big box commerce and began training in the mysterious arts of front end web development. With no mentor to guide him, Jacob crept through the night seeking arcane tomes of coding knowledge. With their help, he has begun forging himself into a sharpened blade of front end precision. Heed these words, and read on...</p>
-    </div>
-
-    <img class="generic-content-container--images about-section--image" src="./assets/images/avatar-no-grid.png" alt="">
-    
-  </div>
-
-<!-- Skills Section  -->
-
-  <!-- Skills 1 -->
-  <div class="generic-content-container primary-stats-section">
-
-    <div class="generic-content-container__text-content primary-stats-section__text-content" id="primary-skills">
-        <h2>Primary Skills</h2>
-        <p>These are the Tech-Rogue's most powerfull skills.</p>
-        <ul>
-          <h4>HTML Strike</h4>
-          <li>Standard attack. Adds +2 when a code editor is equipped.</li>
-          <h4>Cunning CSS</h4>
-          <li>Adds +2 to the Rogue's responsiveness. A mobile-first attack.</li>
-          <h4>Shadow-Git</h4>
-          <li>The Tech-Rogue is able to pull code from the shadow realm of Repo, and with terminal dagger strikes, branch the code to his whims.</li>
-        </ul>
-    </div>
-
-    <img class="generic-content-container--images primary-stats-section--image" src="./assets/images/avatar-no-grid.png" alt="">
-
-  </div>
-
-  <!-- Skills 2 -->
-  <div class="generic-content-container secondary-stats-section">
-    <div class="generic-content-container__text-content secondary-stats-section__text-content" id="secondary-skills">
-      <h2>Secondary Skills</h2>
-        <p>These skills are yet to be mastered. However, as the Tech-Rogue gains experience, they will grow in power.</p>
-        <ul>
-          <h4>JavaScript Guile</h4>
-          <li>The Tech-Rogue interacts with an opponent's DOM, manipulating it to his will.</li>
-          <h4>jQuery Adept</h4>
-          <li>Enhances JavaScript Guile, allowing for faster DOM strikes.</li>
-          <h4>CMS Aura</h4>
-          <li>Using shadow energy, the Tech-Rogue takes on the form of a Content Manager, infiltrating and updating information to suit his, or his benefactor's, needs.</li>
-          <h4>Angular REACTions</h4>
-          <li>This skill begins the Tech-Rogue's journey to a prestige class. Once learned, it is a very powerful skill.</li>
-        </ul>
-    </div>
-
-    <img class="generic-content-container--images secondary-stats-section--image" src="./assets/images/avatar-no-grid.png" alt="">
-
+        <!-- Product Video -->
+        <div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen id="video"></iframe>
+        </div>
+      
+        <!-- Product Info -->
+        <div id="info">
+          <p>What Can Lint Do?</p>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      
+        <!-- Email Form -->
+        <form action="" id="form">
+          <input type="email" id="email">
+          <button><input type="submit" id="submit"></button>
+        </form>
   </div>
   
-<!-- End Skills Section -->
 
-<!-- Sample Projects Section - Coming Soon! -->
-
-<!-- Footer -->
-  <div class="generic-content-container site-footer">
-    <p>Copyright &copy; 2018 Jacob Schaefer. All rights reserved.</p>
-  </div>
+  <!-- build:js assets/scripts/App.js -->
+  <script src="temp/scripts/App.js"></script>
+  <!-- endbuild -->
 
 </body>
 </html>

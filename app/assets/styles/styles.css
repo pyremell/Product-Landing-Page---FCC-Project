@@ -1,15 +1,7 @@
-/* Use this file to import CSS files, and pipe them through the compiler */
+/* Use this file to import CSS files from the modules folder, and pipe them through the compiler.  */
 @import "normalize.css";
 @import "base/_variables";
 @import "base/_mixins";
 @import "base/_global";
 @import "modules/_wrapper";
-@import "modules/_btn";
-@import "modules/_title";
-@import "modules/_generic-content-container";
-@import "modules/_about-section";
-@import "modules/_primary-stats-section";
-@import "modules/_secondary-stats-section";
-@import "modules/_site-footer";
-@import "modules/_site-header";
-@import "modules/_primary-nav";
+@import "modules/_header-container";
