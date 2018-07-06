@@ -1,0 +1,30 @@
+.video-section {
+  background-color: $mainTeal;
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5em;
+  justify-content: space-around;
+  align-items: center;
+  padding: 100px;
+
+  @mixin atLarge {
+    flex-direction: row-reverse;
+  }
+
+  /* &__video-player {
+
+    @mixin atMedium {
+      margin-right: 50px;
+    }
+    
+  } */
+
+  &__video-blurb {
+    color: $mainWhite;
+    line-height: 1.7;
+
+    @mixin atLarge {
+      width: 30%;
+    }
+  }
+}
