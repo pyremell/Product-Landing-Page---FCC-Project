@@ -11,14 +11,6 @@
     flex-direction: row-reverse;
   }
 
-  /* &__video-player {
-
-    @mixin atMedium {
-      margin-right: 50px;
-    }
-    
-  } */
-
   &__video-blurb {
     color: $mainWhite;
     line-height: 1.7;
