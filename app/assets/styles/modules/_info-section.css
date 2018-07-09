@@ -1,0 +1,26 @@
+.info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @mixin atLarge {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  &__info-title {
+    font-size: 2.5em;
+    color: $mainTeal;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__list li {
+    list-style-type: none;
+    font-size: 1.5em;
+    margin: 2.5em 0 0;
+  }
+}
