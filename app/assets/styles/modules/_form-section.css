@@ -1,0 +1,21 @@
+.form-section {
+  background-color: $mainTeal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 100px;
+
+  &__form-text {
+    color: $mainWhite;
+    font-size: 1.5em;
+  }
+
+  &__submit-button {
+    color: $mainDarkGrey;
+    background-color: $mainWhite;
+    padding: 6px;
+    border: none;
+  }
+}
